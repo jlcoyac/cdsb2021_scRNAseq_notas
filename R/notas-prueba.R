@@ -21,3 +21,31 @@ usethis::use_git() #
 usethis::use_github()
 
 gh::gh_whoami() # para checar cómo quedó la configuración
+
+
+# escribimos un nuevo archivo, volvemos a usar here::here para especificar path
+writeLines("hola", here::here("R","prueba-here.R"))
+# otra manera es usar use_r
+usethis::use_r("archivo-prueba-github.R") # añade archivo al directorio R del proyecto actual
+
+# Por ejemplo podríamos probar añadir algo nuevo
+gert::git_add("R/archivo-prueba-github.R")
+
+# añadimos commit de lo que se hizo
+gert::git_commit("se subio archivo prueba")
+
+# nos da info de los commits
+gert::git_log()
+
+# sube tus cambios del repo local a los de github
+gert::git_push() # COMANDO IMPORTANTE
+
+## Creen el RStudio project. Es MUY importante que el usuario debe sea igual que en github
+usethis::create_project("jlcoyac_scRNAseq.github.io")
+
+## Configura Git y GitHub
+
+# Con use_git() preguntará si desean hacer un commit, y después pedirá reiniciar Rstudio para que obtengan un nuevo botón llamado "git()"
+usethis::use_git()
+
+usethis::use_github()
