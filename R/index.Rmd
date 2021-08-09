@@ -1,0 +1,17 @@
+---
+title: "José Luis Coyac Rodríguez"
+image: "xiang.jpg"
+links:
+  - label: LinkedIn
+    url: "https://linkedin.com/jlcoyac"
+  - label: Twitter
+    url: "https://twitter.com/luis.coyac"
+  - label: GitHub
+    url: "https://github.com/"
+  - label: Email
+    url: "mailto:jlcoyac@yahoo.com"
+output:
+  postcards::jolla_blue
+---
+ 
+Soy estudiante del Doctorado en Biotenocnología de Plantas en el CINVESTAV-Irapuato
